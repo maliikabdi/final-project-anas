@@ -1,0 +1,459 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-family: "anybody", sans-serif;
+    background-color: #dfdfd8;
+}
+
+header {
+
+    background-color: rgb(250, 250, 246);
+    height: 4.5rem;
+    position: sticky;
+    top: 0;
+}
+
+.container {
+    width: 1110px;
+    margin-inline: auto;
+}
+
+img {
+
+    width: 100%;
+}
+
+
+.desktop-menu {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu li {
+
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+    color: #2b2b2b;
+}
+
+.menu li a:hover {
+
+   color: rgb(95, 106, 212); 
+}
+
+.desktop-menu h2 {
+
+    font-weight: 700;
+    font-size: 1.5625rem;
+    line-height: 1.5625rem;
+}
+
+.hamburger {
+
+    display: none;
+}
+
+.mobile-menu {
+
+    display: none;
+}
+
+.hero {
+
+    height: calc(100vh - 4.5rem);
+    /* background-color: aqua; */
+
+    background: linear-gradient(rgba(212, 142, 142, 0.2), rgba(41, 155, 41, 0.2)) , 
+    url("https://media.istockphoto.com/id/1696167872/photo/aerial-view-of-forest-at-sunset-on-the-background-of-mountains-in-dolomites.webp?a=1&b=1&s=612x612&w=0&k=20&c=XpgBalIWrljWuN8f_SL-GzueON4ecBeCfoJGOIsunDw=") center/ cover ;
+
+    display: flex;
+    justify-content: center;
+}
+
+.hero .hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-container h1 {
+    font-weight: 400;
+    font-size: 80px;
+    color: #ffff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.btn {
+
+    font-weight: 500;
+    font-size: 20px;
+    padding: 20px;
+    background-color: #5f6ad4;
+    border: none;
+    border-radius: 10px;
+    margin: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+.btn:hover {
+
+    background-color: rgb(250, 250, 246);;
+}
+
+
+/* yoga section */
+
+.yoga {
+    background: linear-gradient(rgba(212, 142, 142, 0.4), rgba(27, 49, 27, 0.4)) , 
+    url("https://plus.unsplash.com/premium_photo-1667762241488-b364b622547c?q=80&w=3088&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center/ cover ;
+    height: 90vh;
+    border-radius: 25px; 
+    margin-top: 96px;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+.yoga .contant {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 728px;
+    margin-inline: auto;
+    color: white;
+    text-align: center;
+
+    margin-bottom: 96px;
+
+
+}
+
+.yoga .contant h1 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.yoga .contant p {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 32px;
+}
+
+
+.info-boxs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 96px;
+}
+
+
+
+
+.info-boxs .box h1 {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 32px;
+    margin-top: 20px;
+}
+
+.info-boxs .box p {
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 8px;
+    color: #646464;
+}
+
+.info-boxs .box img {
+    border-radius: 20px;
+    /* width: 700px; */
+}
+
+.prefect-condition {
+
+    height: 438px;
+    
+
+    background: linear-gradient(rgba(225, 211, 211, 0.4), rgba(146, 172, 146, 0.4)) , url("https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-andrea-piacquadio-3779750.jpeg") center  / cover ;
+
+    margin-top: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.prefect-condition h1 {
+
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 50px;
+    color: #2a2a2a;
+    padding: 20px;
+    
+}
+
+.prefect-condition  p {
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #2b2b2b;
+    padding: 20px;
+}
+
+/* mobile phones and tablets */
+
+@media (max-width: 768px) {
+
+    .desktop-menu {
+        display: none;
+    }
+
+    header {
+
+        height: 0;
+        
+    }
+
+    i {
+        z-index: 11111;
+    }
+
+    .hamburger {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: absolute;
+        top: 10%;
+        right: 5%;
+        margin-top: 10px;
+        background-color: blueviolet;
+        color: white;
+        
+    }
+
+    .hamburger i[data-visible="true"] {
+
+        display: block;
+    }
+
+    .hamburger i[data-visible="false"] {
+
+        display: none;
+    }
+
+    .mobile-menu {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed ;
+        background-color: #2b2b2b;
+        color: white;
+        inset: 0 0 0 0;
+        padding: 100px;
+        width: 100%;
+        transform: translatex(00%);
+
+    }
+
+    .mobile-menu[data-visible= "false"] {
+
+        transform: translatex(100%);
+    }
+
+    
+
+    .mobile-menu h2 {
+
+        margin-top: 20px;
+        /* margin-right: 75%; */
+
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 50px;
+        cursor: pointer;
+        border-bottom: 1px solid white;
+        padding: 20px;
+    
+    }
+
+
+    .mobile-menu h2:hover {
+
+        color: #c7c7c7;
+    }
+
+    .mobile-menu ul {
+    
+        margin-top: 20px;
+        
+   }
+
+   .mobile-menu li {
+
+    
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 32px;
+    font-size: 25px;
+   }
+
+   .mobile-menu li a {
+
+    text-decoration: none;
+    color: white;
+
+    
+   }
+
+   .mobile-menu li a:hover{
+
+    color: #5f6ad4;
+    
+   }
+
+   .menu-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    width: 100%;
+   }
+
+   .btn-primery , .btn-secondery {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-family: anybody, sans-serif;
+    color: white;
+   }
+
+   .btn-primery {
+     background-color: #5f6ad4;
+   }
+
+   .btn-secondery {
+    background-color: black;
+    border: 1px solid white;
+   }
+
+   .hero {
+    
+    height: 100vh;
+
+   }
+
+   .hero h1 {
+
+    font-size: 3rem;
+    padding: 20px;
+   }
+
+   .yoga {
+    width: 90%;
+    /* margin-inline: 25px ; */
+   }
+
+   .yoga .contant {
+    margin-bottom: 40px;
+   }
+
+   .yoga .contant h1 {
+
+    font-size: 39px;
+    line-height: 47px;
+
+   }
+
+   .yoga .contant p {
+
+    font-size: 22px;
+    line-height: 27px;
+   }
+
+   .info-boxs {
+
+    grid-template-columns:1fr;
+    width: 90%;
+    
+   }
+
+   .box {
+
+    display: flex;
+    flex-direction: column;
+   }
+
+   
+
+   .info-boxs  h1 {
+    font-size: 20px;
+    line-height: 24px;
+   }
+
+   .info-boxs p {
+    font-size: 18px;
+    line-height: 21px;
+   }
+
+   .prefect-condition h1 {
+
+    font-size: 31px;
+   }
+
+   .prefect-condition p {
+
+    font-size: 18px;
+   }
+ 
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<header>
+
+    <div class="hamburger">
+
+        <i class="fa-solid fa-bars" data-visible="true"></i>
+
+        <i class="fa-solid  fa-close" data-visible="false"></i>
+
+    </div>
+
+
+<!-- desktop menu  -->
+
+<nav class="container desktop-menu">
+
+    <!-- right menu -->
+    <ul   class="menu" id="left">
+        <li ><a href="#">Our philosophy</a></li>
+        <li><a href="#">Houses</a></li>
+        <li><a href="#">Map</a></li>
+    </ul>
+
+    <!-- logo -->
+
+            <h2>RetreatM5</h2>
+
+
+<!-- left menu -->
+    <ul class="menu" id="right">
+        <li><a href="#">Leisure</a></li>
+        <li><a href="#">How to get there</a></li>
+        <li><a href="#">Contacts</a></li>
+     </ul>
+</nav>
+
+
+
+<!-- mobile menu -->
+ <nav class="container mobile-menu"  data-visible="true">
+
+    <h2>RetreatM5</h2>
+    <ul>
+        <li ><a href="#">Our philosophy</a></li>
+        <li><a href="#">Houses</a></li>
+        <li><a href="#">Map</a></li>
+        <li><a href="#">Leisure</a></li>
+        <li><a href="#">How to get there</a></li>
+        <li><a href="#">Contacts</a></li>
+
+    </ul>
+
+    <div class="menu-actions">
+        <button class="btn-primery">Book a room</button>
+        <button class="btn-secondery">write to us</button>
+    </div>
+ </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-container">
+
+        <h1>you cannot do yoga <br> yoga is your natural state</h1>
+        <button class="btn">Learn more</button>
+    </div>
+</section>
+
+<div class="container yoga">
+    <div class="contant">
+        <h1>YOU CAN ALWAYS CONTROL WHAT GOES ON INSIDE</h1>
+        <p>Donec enim diam vulputate ut. Amet venenatis urna cursus eget nunc scelerisque viverra mauris. Sit amet venenatis urna cursus eget nunc scelerisque.</p>
+    </div>
+   
+</div>
+
+<div class="container info-boxs">
+
+    <div class="box">
+        <img src="https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-chermiti-mohamed-3049225.jpg" alt="info">
+        <h1>Why you should go to yoga</h1>
+        <p>Scelerisque eu ultrices vitae auctor eu augue ut lectus. Porta non pulvinar neque laoreet sollicitudin nibh.</p>
+        <button class="btn">view more</button>
+    </div>
+    <div class="box">
+        <img src="https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-chermiti-mohamed-3049225.jpg" alt="info">
+        <h1>Why you should go to yoga</h1>
+        <p>Scelerisque eu ultrices vitae auctor eu augue ut lectus. Porta non pulvinar neque laoreet sollicitudin nibh.</p>
+        <button class="btn">view more</button>
+    </div> 
+    <div class="box">
+        <img src="https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-chermiti-mohamed-3049225.jpg" alt="info">
+        <h1>Why you should go to yoga</h1>
+        <p>Scelerisque eu ultrices vitae auctor eu augue ut lectus. Porta non pulvinar neque laoreet sollicitudin nibh.</p>
+        <button class="btn">view more</button>
+    </div>
+    <div class="box">
+        <img src="https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-chermiti-mohamed-3049225.jpg" alt="info">
+        <h1>Why you should go to yoga</h1>
+        <p>Scelerisque eu ultrices vitae auctor eu augue ut lectus. Porta non pulvinar neque laoreet sollicitudin nibh.</p>
+        <button class="btn">view more</button>
+    </div>
+    </div> 
+
+
+    <div class="prefect-condition">
+        <div class="container">
+            <h1>Keep your body in perfect condition</h1>
+            <p>Dignissim diam quis enim lobortis scelerisque fermentum. <br> Ipsum a arcu
+                cursus vitae congue mauris rhoncus. <br> Velit euismod in pellentesque massa
+                placerat duis. <br> Nulla malesuada pellentesque elit eget gravida. <br> Enim sit amet
+                venenatis urna. <br> Venenatis a condimentum vitae sapien pellentesque
+                 habitant morbi tristique</p>
+        </div>
+    </div>
+
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const icons = document.querySelectorAll("i");
+
+    hamburger.addEventListener("click", function (event) {
+        const isVisible = mobileMenu.getAttribute('data-visible');
+        if (isVisible == "true") {
+            // qari hiding
+            mobileMenu.setAttribute('data-visible', "false");
+            icons[0].setAttribute('data-visible', "true");
+            icons[1].setAttribute('data-visible', "false");
+        } else if (isVisible == "false") {
+            // soo bandhig showing
+            mobileMenu.setAttribute('data-visible', "true");
+            icons[0].setAttribute('data-visible', "false");
+            icons[1].setAttribute('data-visible', "true");
+        }
+    });
+
+
+</script>
+</body>
+</html>
