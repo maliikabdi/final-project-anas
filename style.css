@@ -24,18 +24,26 @@ body html {
     padding: 20px;
 }
 
-header {
+.Navbar {
 
     width: 100%;
-    background-color: black;
-    height: 0;
-    /* position: sticky; */
-    top: 10px;
 
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* margin: auto; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: black;
+    color: white;
+    /* height: 0; */
+    /* position: sticky; */
+    top: 0%;
+
+}
+
+.Scrol-menu {
+
+    background-color: white;
+    color: black;
+    position: fixed;
 }
 
 header .btn {
@@ -63,26 +71,23 @@ nav li .Home {
     margin: auto;
 }
 
-img {
-
-    width: 100%;
-}
 
 
-.desktop-menu {
-     width: 70%;
-    /* height: 100%;  */
+
+.menu {
+    
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: transparent;
     text-transform: uppercase;
-    position: fixed;
+  
     top: 1px;
-    left: 30%;
+    
 
 
 }
+
 
 .logo {
 
@@ -95,20 +100,29 @@ img {
     
 }
 
-.logo .logo2 {
+.Navbar .logo .logo2 {
 
     color: #ed563b;
     font-size:32px;
     font-family: sans-serif;
-
+    
 }
 
- .logo .logo1 {
+.Scrol-menu .logo .logo1 {
 
     font-size:32px;
     font-family: sans-serif;
-    color: white;
+    color: black;
+   
     
+}
+
+.Navbar .logo1 {
+    font-size:32px;
+    font-family: sans-serif;
+    color: white;
+   
+
 }
 
 
@@ -130,6 +144,19 @@ img {
     font-size: 13px;
     line-height: 40px;
     color: white;
+    text-transform: uppercase;
+    display: block;
+    padding: 0 20px;
+}
+
+.Scrol-menu .menu li a  {
+
+    text-decoration: none;
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 40px;
+    color: black;
     text-transform: uppercase;
     display: block;
     padding: 0 20px;
@@ -164,17 +191,12 @@ img {
     width: 100vw;
     display: flex;
     justify-content: center;
-
-    
+    top: 0%;
 
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://media.istockphoto.com/id/2187276175/photo/a-handsome-young-man-lifts-weights-in-a-modern-gym-focused-and-energized-with-headphones-on.webp?a=1&b=1&s=612x612&w=0&k=20&c=5zrtHWaRpcbaDWT-T-REpv4f40NyBkNZWKwHiYIF58Y=") center  ;
-
     background-size: cover;
-
     height: calc(100vh - 4.5rem);
     top: 0;
-    /* right: 10px; */
-   
 
 }
 
@@ -212,6 +234,20 @@ img {
     color: #ed563b;
     font-weight: 900;
     font-style: normal;
+}
+
+.hero .btn {
+
+    
+    display: inline-block;
+    font-size: 15px;
+    background-color: rgb(237, 86, 59);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    transition: 0.3s;
 }
 
 .choose-pro {
@@ -263,6 +299,8 @@ img {
     margin: 20px;
 }
 
+
+
 /* programs section */
 
 .programs {
@@ -274,7 +312,6 @@ img {
     align-items: center;
     font-family: sans-serif;
 
-    /* gap: 40px; */
 }
 
 .programs img {
@@ -318,6 +355,21 @@ img {
     text-decoration: none;
 }
 
+
+
+.b-member .btn {
+
+    display: inline-block;
+    font-size: 15px;
+    background-color: rgb(237, 86, 59);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    transition: 0.3s;
+
+}
 
 .new-gym {
 
@@ -390,42 +442,6 @@ img {
 
 
 
-
-
-
-
- /* .info-boxs{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    margin-top: 96px;
-} */
-
-
-
-
-/* .info-boxs .box h1 {
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 32px;
-    margin-top: 20px;
-}
-
-.info-boxs .box p {
-
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 26px;
-    margin-top: 8px;
-    color: #646464;
-}
-
-.info-boxs .box img {
-    border-radius: 20px;
-    /* width: 700px; */
-/* }   */
-
-
 .prefect-condition {
 
     display: flex;
@@ -436,10 +452,7 @@ img {
 .prefect-condition {
 
     height: 438px;
-    
-
     background: url("https://templatemo.com/templates/templatemo_548_training_studio/assets/images/cta-bg.jpg") center  / cover ;
-
     margin-top: 80px;
 
     
@@ -537,8 +550,6 @@ img {
     box-shadow: 8px 8px 20px rgba(1, 1, 1, 0.1);
     width: 390px;
     padding: 30px;
-
-
     font-size: 23px;
     font-weight: 700;
     color: #232d39;
@@ -561,8 +572,6 @@ img {
     box-shadow: 8px 8px 20px rgba(1, 1, 1, 0.1);
     width: 390px;
     padding: 30px;
-
-
     font-size: 23px;
     font-weight: 700;
     color: #232d39;
@@ -582,8 +591,6 @@ img {
     box-shadow: 8px 8px 20px rgba(1, 1, 1, 0.1);
     width: 390px;
     padding: 30px;
-
-
     font-size: 23px;
     font-weight: 700;
     color: #232d39;
@@ -603,8 +610,6 @@ img {
     box-shadow: 8px 8px 20px rgba(1, 1, 1, 0.1);
     width: 390px;
     padding: 30px;
-
-
     font-size: 23px;
     font-weight: 700;
     color: #232d39;
@@ -670,11 +675,6 @@ img {
     background: url("https://templatemo.com/templates/templatemo_548_training_studio/assets/images/schedule-bg.jpg") center;
     background-size: cover;
     height: 100vh;
-
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    
 }
 
 .Classes   {
@@ -767,10 +767,6 @@ table {
 
     border-collapse: collapse;
     width: 800px;
-    /* height: 250px; */
-
-    
-
 }
 
 
@@ -781,8 +777,7 @@ table {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    /* width: 100%; */
-    
+    margin-bottom: 70px;
 }
 
 .experts img {
@@ -828,7 +823,6 @@ table {
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
-
     background-color: white;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1) ;
     padding: 40px;
@@ -844,7 +838,6 @@ table {
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
-
     background-color: white;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1) ;
     padding: 40px;
@@ -861,7 +854,6 @@ table {
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
-
     background-color: white;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1) ;
     padding: 40px;
@@ -888,15 +880,15 @@ table {
     color: black;
 }
 
+
+
+/* map and form */
+
 .map-form {
 
-    width: 100%;
+    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* height: 100vh; */
-    margin-top: 140px;
-    
-    
 }
 
 iframe {
@@ -909,19 +901,27 @@ iframe {
 .form-container {
     
    
-    background: url("https://templatemo.com/templates/templatemo_548_training_studio/assets/images/contact-bg.jpg");
-    background-position: center center;
+    /* background-image: url("https://templatemo.com/templates/templatemo_548_training_studio/assets/images/contact-bg.jpg"); */
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 50vw;
+    /* width: 50vw; */
     right: 0;
 
     
 }
 
+
+.form-container img {
+
+    width: 50vw;
+    height: 80vh;
+}
+
 .form-container {
 
     width: 100%;
+    position: relative;
 }
 
 .name-email {
@@ -929,8 +929,38 @@ iframe {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    /* width: 243px; */
     height: 80px;
+}
+
+.form {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+    position: absolute;
+    right: 10%;
+    bottom: 13% ;
+    width: 600px;
+    height: 60vh;
+    border-radius: 10px;
+    
+}
+
+.form .btn {
+
+    font-size: 13px;
+    padding: 11px 17px;
+    background-color: #ed563b;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: all .3s;
+    border: none;
+    outline: none;
+    margin-top: -8px;
 }
 
 form {
@@ -939,32 +969,65 @@ form {
     
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    margin: 80px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-    background-color: white;
-    /* width: 40vw; */
-    /* height: 600px; */
-    padding: 10px;
+    
+    justify-content: flex-start;
+    align-items: flex-start;
+    
     
     
     
 }
 
+.name-email #Name {
+
+    color: #7a7a7a;
+    font-size: 13px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    width: 220px;
+    height: 40px;
+}
+
+.name-email #email {
+
+    color: #7a7a7a;
+    font-size: 13px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    width: 220px;
+    height: 40px;
+}
+
 form textarea  {
 
-    /* height: 250px; */
+    color: #7a7a7a;
+    font-size: 13px;
+    border: 1px solid #ddd;
+    line-height: 20px;
+    width: 480px;
+    padding: 0px 10px;
 }
 
 .m-s {
 
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     width: 510px;
     padding: 20px;
+
+    
+}
+
+.m-s input {
+
+    color: #7a7a7a;
+    font-size: 13px;
+    border: 1px solid #ddd;
+    width: 480px;
+    height: 40px;
+    font-family: sans-serif;
+
 }
 
 
@@ -982,27 +1045,35 @@ footer {
 @media (max-width: 768px) {
 
     .logo .logo1 {
+
+        
         color: black;
-         /* width: 100%; */
+        
        }
 
-       .logo {
+    .logo {
         width: 100%;
         display: flex;
         gap: 10px;
         position: absolute;
+        top: 2%;
        }
 
-    .desktop-menu {
+    .menu {
         display: none;
     }
 
 
 
-    header {
+    .Navbar {
 
         height:0%;
         
+    }
+
+    .Scrol-menu {
+
+        display: none;
     }
 
     i {
@@ -1024,7 +1095,7 @@ footer {
         height: 50px;
         border-radius: 50%;
         position: absolute;
-        top: 2%;
+        top: 1%;
         right: 5%; 
         background-color: white;
         color: black;
@@ -1041,20 +1112,21 @@ footer {
         display: none;
     }
 
-    .mobile-menu {
 
+    .mobile-menu {
+        
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        position: fixed ;
+        position: absolute;
         background-color: white;
         color: black;
         /* font-size: 13px; */
         inset: 0 0 0 0;
         width: 100%;
         height: 40%; 
-        top: -44%;
+        top: -48%;
         
         transform: translatex(00%);
 
@@ -1234,7 +1306,7 @@ footer {
 table {
 
     width: 90%;
-    /* width: 100%; */
+    
 }
 
 .c-schedule {
@@ -1251,12 +1323,13 @@ table {
 .map-form  {
 
     grid-template-columns: 1fr;
-    width: 100%;
+    /* width: 100%; */
     
 }
 
-.map-form .form-container  {
-     /* width: 100%; */
+.form-container img {
+     width: 100%;
+     
 }
 
 iframe {
@@ -1265,9 +1338,69 @@ iframe {
     
 }
 
+.form {
+
+    width: 100%;
+}
+
+.form {
+
+    width: 380px;
+    height: 550px;
+    margin-top: 10px;
+    margin-bottom: 75px;
+    margin-right: -5%;
+    
+    
+    
+}
+
+form {
+     width: 50%;
+     position: sticky;
+     margin-top: 5%;
+     margin-right: 40%;
+
+}
+
+.name-email 
+{
+   
+
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 60px;
+    margin-left: 20px;    
+}
+
+.name-email #Name {
+
+    width: 320px;
+    
+
+}
+
+.name-email #email {
+
+    width: 320px;
+    margin-bottom: 30px;
+}
+
+.m-s input {
+    width: 320px;
+}
+
+.m-s textarea {
+
+    width: 320px;
+}
+
+
+
 footer {
 
     width: 100%;
+    height: 20px;
     
 }
 

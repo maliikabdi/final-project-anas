@@ -12,10 +12,10 @@
 <body>
    
         
-<header>
+<header class="Navbar Scrol-menu">
 
         <!-- logo -->
-        <div class=" container logo">
+        <div class="logo">
             <h2 class="logo1">Training</h2>
             <h2 class="logo2">studio</h2>
         </div>
@@ -33,16 +33,19 @@
 
 <!-- desktop menu  -->
 
-<nav class="container desktop-menu">
+
     <ul class="menu" id="right">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Classes</a></li>
         <li><a href="#">schedulles</a></li>
         <li><a href="#">contact</a></li>
+        <button class="btn">sign up</button>
      </ul>
-     <button class="btn">sign up</button>
-</nav>
+     
+
+
+
 
 
 
@@ -349,39 +352,47 @@
 </div>
 
 <div class="map-form">
-<!-- map -->
 
-<div class="map">
 
+
+                <!-- map -->
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d510564.6510798356!2d36.51773533053504!3d-1.3031873862487506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi!5e0!3m2!1ssw!2ske!4v1741872134430!5m2!1ssw!2ske" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
 
 
-<!-- form sections -->
+ 
+
+     
+
+
+
+                 <!-- form sections -->
 
 <div class="form-container">
 
-    <!-- <div class="container form">
-
-    <form action="web.html" method="post">
-
-        <div class="name-email">
-    <label for="name"></label>
-    <input type="Name" id="Name" placeholder="Your Name">
-    <label for="email"></label>
-    <input type="email" id="email" placeholder="Your Email">
     
-</div>
-    <div class="m-s">
-    <label for="subject"></label>
-    <input type="text" id="text" placeholder="subject">
-    <label for="masage"></label>
-    <textarea name="message" id="message" rows="10" placeholder="message"></textarea>
-</div>
+    <img src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/contact-bg.jpg" alt="sawir"> 
 
-    <button class="btn">send message</button>
-</form>
-</div> -->
+    <div class="container form">
+
+        <form action="web.html" method="post">
+
+            <div class="name-email">
+                <label for="name"></label>
+                <input type="Name" id="Name" placeholder="Your Name">
+                <label for="email"></label>
+                <input type="email" id="email" placeholder="Your Email">
+    
+            </div>
+            <div class="m-s">
+                <label for="subject"></label>
+                <input type="text" id="text" placeholder="subject">
+                <label for="masage"></label>
+                <textarea name="message" id="message" rows="10" placeholder="message"></textarea>
+            </div>
+
+                <button class="btn">send message</button>
+        </form>
+    </div> 
 </div>
 
 </div>
@@ -394,6 +405,16 @@
 
     
 
+<script>
+    window.addEventListener("scroll", function() {
+        var navbar = document.querySelector(".Navbar");
+        if (window.scrollY > 50) {
+            navbar.classList.add("Scrol-menu");
+        } else {
+            navbar.classList.remove("Scrol-menu");
+        }
+    });
+</script>
 
    
 
