@@ -13,7 +13,7 @@ body html {
 
     background: rgb(255, 255, 255);
     font-family: Poppins, sans-serif;
-    
+
     /* position: relative; */
 }
 
@@ -75,15 +75,15 @@ nav li .Home {
 
 
 .menu {
-    
+
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: transparent;
     text-transform: uppercase;
-  
+
     top: 1px;
-    
+
 
 
 }
@@ -96,8 +96,8 @@ nav li .Home {
     position: fixed ;
     top: 30px;
     left: 10%;
-   
-    
+
+
 }
 
 .Navbar .logo .logo2 {
@@ -105,7 +105,7 @@ nav li .Home {
     color: #ed563b;
     font-size:32px;
     font-family: sans-serif;
-    
+
 }
 
 .Scrol-menu .logo .logo1 {
@@ -113,15 +113,15 @@ nav li .Home {
     font-size:32px;
     font-family: sans-serif;
     color: black;
-   
-    
+
+
 }
 
 .Navbar .logo1 {
     font-size:32px;
     font-family: sans-serif;
     color: white;
-   
+
 
 }
 
@@ -164,7 +164,7 @@ nav li .Home {
 
 .menu li a:hover {
 
-   color: rgb(221, 112, 72); 
+   color: rgb(221, 112, 72);
 }
 
 .desktop-menu h2 {
@@ -206,7 +206,7 @@ nav li .Home {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+
 }
 
 .hero-container h3 {
@@ -238,7 +238,7 @@ nav li .Home {
 
 .hero .btn {
 
-    
+
     display: inline-block;
     font-size: 15px;
     background-color: rgb(237, 86, 59);
@@ -251,8 +251,8 @@ nav li .Home {
 }
 
 .choose-pro {
-    
-    
+
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -411,7 +411,7 @@ nav li .Home {
 }
 
 .body-building {
-    
+
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -455,7 +455,7 @@ nav li .Home {
     background: url("https://templatemo.com/templates/templatemo_548_training_studio/assets/images/cta-bg.jpg") center  / cover ;
     margin-top: 80px;
 
-    
+
 }
 
 .prefect-condition .b-member {
@@ -474,7 +474,7 @@ nav li .Home {
     text-transform: uppercase;
     color: #fff;
     text-align: center;
-    
+
 }
 
 .prefect-condition em {
@@ -502,7 +502,7 @@ nav li .Home {
 }
 
 .training-sessions img {
-    
+
     width: 100%;
 }
 
@@ -540,7 +540,7 @@ nav li .Home {
 
 .sessions .first-class {
 
-    
+
 
     display: flex;
     justify-content: center;
@@ -558,7 +558,7 @@ nav li .Home {
     margin-top: 30px;
     font-family: sans-serif;
 
-    
+
 }
 
 .sessions .second-class {
@@ -686,7 +686,7 @@ nav li .Home {
     margin-top: 140px;
     margin-bottom: 80px;
     font-family: sans-serif;
-    
+
 }
 
 .Classes h2 {
@@ -734,7 +734,7 @@ nav li .Home {
     justify-content: center;
     align-items: center;
     margin-bottom: 95px;
-    
+
 
 }
 
@@ -745,7 +745,7 @@ nav li .Home {
     margin-bottom: 10px;
     color: white;
     font-family: sans-serif;
-    
+
 }
 
 .list li {
@@ -886,7 +886,7 @@ table {
 
 .map-form {
 
-    
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -895,12 +895,12 @@ iframe {
 
     width: 100%;
     height: 80vh;
-     
+
 }
 
 .form-container {
-    
-   
+
+
     /* background-image: url("https://templatemo.com/templates/templatemo_548_training_studio/assets/images/contact-bg.jpg"); */
     background-position: center;
     background-repeat: no-repeat;
@@ -908,7 +908,7 @@ iframe {
     /* width: 50vw; */
     right: 0;
 
-    
+
 }
 
 
@@ -945,7 +945,7 @@ iframe {
     width: 600px;
     height: 60vh;
     border-radius: 10px;
-    
+
 }
 
 .form .btn {
@@ -965,17 +965,17 @@ iframe {
 
 form {
 
-    
-    
+
+
     display: flex;
     flex-direction: column;
-    
+
     justify-content: flex-start;
     align-items: flex-start;
-    
-    
-    
-    
+
+
+
+
 }
 
 .name-email #Name {
@@ -1016,7 +1016,7 @@ form textarea  {
     width: 510px;
     padding: 20px;
 
-    
+
 }
 
 .m-s input {
@@ -1046,9 +1046,9 @@ footer {
 
     .logo .logo1 {
 
-        
+
         color: black;
-        
+
        }
 
     .logo {
@@ -1068,7 +1068,7 @@ footer {
     .Navbar {
 
         height:0%;
-        
+
     }
 
     .Scrol-menu {
@@ -1080,13 +1080,13 @@ footer {
         z-index: 11111;
     }
 
-    
 
-   
+
+
 
     .hamburger {
 
-        
+
         width: 100%;
         display: flex;
         justify-content: center;
@@ -1096,10 +1096,10 @@ footer {
         border-radius: 50%;
         position: absolute;
         top: 1%;
-        right: 5%; 
+        right: 5%;
         background-color: white;
         color: black;
-        
+
     }
 
     .hamburger i[data-visible="true"] {
@@ -1114,7 +1114,7 @@ footer {
 
 
     .mobile-menu {
-        
+
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1125,9 +1125,9 @@ footer {
         /* font-size: 13px; */
         inset: 0 0 0 0;
         width: 100%;
-        height: 40%; 
+        height: 40%;
         top: -48%;
-        
+
         transform: translatex(00%);
 
     }
@@ -1142,9 +1142,9 @@ footer {
         color: #232d39;
         text-transform: uppercase;
     }
-    
 
-    
+
+
 
     .mobile-menu .btn {
 
@@ -1156,21 +1156,21 @@ footer {
         transform: translatex(100%);
     }
 
-    
+
     .mobile-menu h2:hover {
 
         color: #c7c7c7;
     }
 
     .mobile-menu ul {
-    
+
         margin-top: 20px;
-        
+
    }
 
    .mobile-menu li {
 
-    
+
     list-style: none;
     padding: 10px;
     text-align: center;
@@ -1184,13 +1184,13 @@ footer {
     text-decoration: none;
     color: black;
 
-    
+
    }
 
    .mobile-menu li a:hover{
 
     color: #ed563b;
-    
+
    }
 
    .menu-actions {
@@ -1235,9 +1235,9 @@ footer {
     padding: 25px;
    }
 
-   
 
-  
+
+
 
    .prefect-condition .b-member {
 
@@ -1257,10 +1257,10 @@ footer {
 
 
    .choose-pro {
-    
-    
+
+
     width: 100%;
-    
+
 }
 
 .choose-pro p {
@@ -1289,7 +1289,7 @@ footer {
 
 .detailes {
 
-   
+
     margin: 20px;
 }
 
@@ -1306,7 +1306,7 @@ footer {
 table {
 
     width: 90%;
-    
+
 }
 
 .c-schedule {
@@ -1324,18 +1324,18 @@ table {
 
     grid-template-columns: 1fr;
     /* width: 100%; */
-    
+
 }
 
 .form-container img {
      width: 100%;
-     
+
 }
 
 iframe {
 
     width: 100%;
-    
+
 }
 
 .form {
@@ -1350,9 +1350,9 @@ iframe {
     margin-top: 10px;
     margin-bottom: 75px;
     margin-right: -5%;
-    
-    
-    
+
+
+
 }
 
 form {
@@ -1363,20 +1363,20 @@ form {
 
 }
 
-.name-email 
+.name-email
 {
-   
+
 
     display: grid;
     grid-template-columns: 1fr;
     margin-bottom: 60px;
-    margin-left: 20px;    
+    margin-left: 20px;
 }
 
 .name-email #Name {
 
     width: 320px;
-    
+
 
 }
 
@@ -1401,8 +1401,8 @@ footer {
 
     width: 100%;
     height: 20px;
-    
+
 }
 
- 
+
 }
