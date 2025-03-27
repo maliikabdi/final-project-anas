@@ -1042,14 +1042,25 @@ footer {
 
 /* mobile phones and tablets */
 
+/* Ensure no horizontal scrolling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Mobile phones and tablets */
 @media (max-width: 768px) {
 
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
     .logo .logo1 {
-
-
         color: black;
-
-       }
+    }
 
     .logo {
         width: 100%;
@@ -1057,22 +1068,18 @@ footer {
         gap: 10px;
         position: absolute;
         top: 2%;
-       }
+        left: 5%;
+    }
 
     .menu {
         display: none;
     }
 
-
-
     .Navbar {
-
-        height:0%;
-
+        height: 0%;
     }
 
     .Scrol-menu {
-
         display: none;
     }
 
@@ -1080,14 +1087,8 @@ footer {
         z-index: 11111;
     }
 
-
-
-
-
+    /* Updated hamburger positioning */
     .hamburger {
-
-
-        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1099,310 +1100,223 @@ footer {
         right: 5%;
         background-color: white;
         color: black;
-
+        z-index: 9999;
     }
 
     .hamburger i[data-visible="true"] {
-
         display: block;
     }
 
     .hamburger i[data-visible="false"] {
-
         display: none;
     }
 
-
+    /* Prevents menu from overflowing offscreen */
     .mobile-menu {
-
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        position: absolute;
+        position: fixed;
         background-color: white;
         color: black;
-        /* font-size: 13px; */
-        inset: 0 0 0 0;
         width: 100%;
         height: 40%;
         top: -48%;
-
-        transform: translatex(00%);
-
+        left: 0;
+        right: 0;
+        transform: translateX(0%);
+        transition: top 0.3s ease-in-out;
     }
 
-    .mobile-menu ul li a {
-
-        font-family:sans-serif ;
-        font-size: 15px;
-        line-height: -70px;
-        padding: 0px;
-        background: #f7f7f7;
-        color: #232d39;
-        text-transform: uppercase;
-    }
-
-
-
-
-    .mobile-menu .btn {
-
-        width: 100%;
-    }
-
-    .mobile-menu[data-visible= "false"] {
-
-        transform: translatex(100%);
-    }
-
-
-    .mobile-menu h2:hover {
-
-        color: #c7c7c7;
+    .mobile-menu[data-visible="false"] {
+        top: -100%;
     }
 
     .mobile-menu ul {
-
         margin-top: 20px;
+    }
 
-   }
+    .mobile-menu li {
+        list-style: none;
+        padding: 10px;
+        text-align: center;
+        font-weight: 500;
+        line-height: 32px;
+        font-size: 18px;
+    }
 
-   .mobile-menu li {
+    .mobile-menu li a {
+        text-decoration: none;
+        color: black;
+    }
 
+    .mobile-menu li a:hover {
+        color: #ed563b;
+    }
 
-    list-style: none;
-    padding: 10px;
-    text-align: center;
-    font-weight: 500;
-    line-height: 32px;
-    font-size: 25px;
-   }
+    .menu-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+        width: 100%;
+    }
 
-   .mobile-menu li a {
+    .btn-primery, .btn-secondery {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        font-family: 'Anybody', sans-serif;
+        color: white;
+    }
+
+    .btn-primery {
+        background-color: #5f6ad4;
+    }
+
+    .btn-secondery {
+        background-color: black;
+        border: 1px solid white;
+    }
+
+    /* Ensure hero section doesn't create extra space */
+    .hero {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+        padding: 20px;
+    }
+
+    /* Other sections fixed for mobile */
+    .prefect-condition .b-member {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .prefect-condition h1 {
+        font-size: 28px;
+    }
+
+    .prefect-condition p {
+        font-size: 16px;
+    }
+
+    .choose-pro {
+        width: 100%;
+    }
+
+    .choose-pro p {
+        font-size: 13px;
+    }
+
+    .programs {
+        grid-template-columns: 1fr;
+        margin: 20px;
+    }
+
+    .training-sessions {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .training-sessions .detailes img {
+        width: 100%;
+    }
+
+    .detailes {
+        margin: 20px;
+    }
+
+    .Classes {
+        width: 100%;
+    }
+
+    .table {
+        width: 100%;
+    }
+
+    table {
+        width: 90%;
+    }
+
+    .c-schedule {
+        width: 100%;
+    }
+
+    .experts {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .map-form {
+        grid-template-columns: 1fr;
+    }
+
+    .form-container img {
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    .form {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 75px;
+        padding: 10px;
+    }
+
+    form {
+        width: 90%;
+        position: relative;
+        margin: 5% auto;
+    }
+
+    .name-email {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 30px;
+        margin-left: 0;
+    }
+
+    .name-email #Name,
+    .name-email #email,
+    .m-s input,
+    .m-s textarea {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    footer {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+}
+footer p {
+
+    font-size: 12px;
+
+}
+
+footer p a {
 
     text-decoration: none;
-    color: black;
-
-
-   }
-
-   .mobile-menu li a:hover{
-
-    color: #ed563b;
-
-   }
-
-   .menu-actions {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
-    width: 100%;
-   }
-
-   .btn-primery , .btn-secondery {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 28px;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    font-family: anybody, sans-serif;
-    color: white;
-   }
-
-   .btn-primery {
-     background-color: #5f6ad4;
-   }
-
-   .btn-secondery {
-    background-color: black;
-    border: 1px solid white;
-   }
-
-   .hero {
-    width: 100%;
-    height: 100vh;
-    /* position: absolute; */
-    margin-top: 15%;
-
-   }
-
-   .hero h1 {
-
-    font-size: 3rem;
-    padding: 25px;
-   }
-
-
-
-
-
-   .prefect-condition .b-member {
-
-    width: 100%;
-    margin-right: 50px;
-   }
-
-   .prefect-condition h1 {
-
-    font-size: 31px;
-   }
-
-   .prefect-condition p {
-
-    font-size: 18px;
-   }
-
-
-   .choose-pro {
-
-
-    width: 100%;
-
 }
 
-.choose-pro p {
-
-    font-size: 13px;
-}
-
-.programs {
-
-    grid-template-columns: 1fr;
-    margin: 20px;
-}
-
-
-
-.training-sessions {
-
-   width: 100%;
-    grid-template-columns: 1fr;
-}
-
-.training-sessions .detailes img {
-
-    width: 100%;
-}
-
-.detailes {
-
-
-    margin: 20px;
-}
-
-.Classes {
-
-    width: 100%;
-}
-
-.table {
-
-    width: 100%;
-}
-
-table {
-
-    width: 90%;
-
-}
-
-.c-schedule {
-
-    width: 100%;
-}
-
-.experts {
-
-    grid-template-columns: 1fr;
-    width: 80%;
-}
-
-.map-form  {
-
-    grid-template-columns: 1fr;
-    /* width: 100%; */
-
-}
-
-.form-container img {
-     width: 100%;
-
-}
-
-iframe {
-
-    width: 100%;
-
-}
-
-.form {
-
-    width: 100%;
-}
-
-.form {
-
-    width: 380px;
-    height: 550px;
-    margin-top: 10px;
-    margin-bottom: 75px;
-    margin-right: -5%;
-
-
-
-}
-
-form {
-     width: 50%;
-     position: sticky;
-     margin-top: 5%;
-     margin-right: 40%;
-
-}
-
-.name-email
-{
-
-
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-bottom: 60px;
-    margin-left: 20px;
-}
-
-.name-email #Name {
-
-    width: 320px;
-
-
-}
-
-.name-email #email {
-
-    width: 320px;
-    margin-bottom: 30px;
-}
-
-.m-s input {
-    width: 320px;
-}
-
-.m-s textarea {
-
-    width: 320px;
-}
-
-
-
-footer {
-
-    width: 100%;
-    height: 20px;
-
-}
-
-
-}
